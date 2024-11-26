@@ -1,11 +1,12 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "app.py",
-            "use": "@vercel/python"
+    "functions": {
+        "app.py": {
+            "includeFiles": [
+                "uploads/**"
+            ]
         }
-    ],
+    },
     "routes": [
         {
             "src": "/file/(.*)",
@@ -19,12 +20,5 @@
             "src": "/(.*)",
             "dest": "app.py"
         }
-    ],
-    "functions": {
-        "app.py": {
-            "includeFiles": [
-                "uploads/**"
-            ]
-        }
-    }
+    ]
 }
