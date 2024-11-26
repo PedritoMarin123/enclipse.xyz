@@ -1,22 +1,22 @@
 {
     "version": 2,
     "functions": {
-        "app.py": {
+        "api/app.py": {
             "includeFiles": "uploads/**"
         }
     },
     "routes": [
         {
             "src": "/file/(.*)",
-            "dest": "app.py"
+            "dest": "api/app.py"
         },
         {
             "src": "/upload",
-            "dest": "app.py"
+            "dest": "api/app.py"
         },
         {
             "src": "/(.*)",
-            "dest": "app.py"
+            "dest": "api/app.py"
         }
     ]
 }
