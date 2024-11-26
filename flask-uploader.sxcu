@@ -1,0 +1,10 @@
+{
+    "Version": "13.6.1",
+    "Name": "Enclipse",
+    "DestinationType": "ImageUploader",
+    "RequestMethod": "POST",
+    "RequestURL": "https://enclipse-uploader-photos.vercel.app/upload",
+    "FileFormName": "file",
+    "URL": "$json:url",
+    "ErrorMessage": "$json:error"
+}
